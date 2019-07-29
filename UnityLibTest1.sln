@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityLibTest1", "UnityLibTest1\UnityLibTest1.csproj", "{A64DF0B2-2501-4367-A073-EE565ECEA014}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A64DF0B2-2501-4367-A073-EE565ECEA014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64DF0B2-2501-4367-A073-EE565ECEA014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64DF0B2-2501-4367-A073-EE565ECEA014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64DF0B2-2501-4367-A073-EE565ECEA014}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E498208B-6916-4EC2-9AC8-FFD3BCB0EFFD}
+	EndGlobalSection
+EndGlobal
