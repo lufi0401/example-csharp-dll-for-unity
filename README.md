@@ -31,7 +31,35 @@
    3. Go to *Debug* tab, Setup *launch.json*
    4. Set the *Path* to `\UNITYPROJECTPATH\Library\EditorInstance.json`
 
-# C. Note
+# C. Setup Common Macro/Properties
+1. Setup Properties XML file:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MarcoName1>MarcoValue1</MarcoName1>
+    <MarcoName2>MarcoValue2</MarcoName2>
+    <DependentMarco3>$(MarcoValue2)Addon</DependentMarco3>
+    ... 
+    <MarcoNameN>MarcoValueN</MarcoNameN>
+  </PropertyGroup>
+</Project>
+```
+2. At `.csproj` file, add following line:
+```xml
+<Project ...>
+  <Import ... />
+  <!-- Add the following line -->
+  <Import Project="Path\to\XmlFile" />
+  ...
+  <!-- And use MarcoName just like other marcos -->
+    <HintPath>$(MarcoName1)...</HintPath>
+  ...
+</Project>
+```
+
+
+# D. Note
 1. *Step A.4.4* prevent Visual Studio from copying UnityEngine.dll to output 
   directory, which is an unnessary and project corrupting step
 2. `Mono` is needed to generate debug symbol for unity debugging (*Step B.5*)
@@ -47,4 +75,4 @@
    - Mono (Version 6.0.0)
    - Unity (Version 2018.4.4f)
 
-// 20190729_ll
+// 20190730_ll

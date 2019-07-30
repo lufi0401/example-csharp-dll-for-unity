@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- IMPORTANT
+         Include backlash for all path as it is default Visual Studio behaviour
+    -->
+  
+    <!-- Path to Unity Installation. Used to locate dlls -->
+    <UnityPath>C:\Program Files\Unity\Hub\Editor\2018.4.4f1\</UnityPath>
+  
+    <!-- Path to Mono Installation. Used to find pdb -->
+    <MonoPath>C:\Program Files\Mono\</MonoPath>
+    
+    <Pdb2mdbPath>$(MonoPath)\bin\pdb2mdb</Pdb2mdbPath>
+  </PropertyGroup>
+</Project>

@@ -14,8 +14,14 @@ namespace UnityLibTest1
 
         public string val;
 
+        /// <summary>
+        /// Internal Counter
+        /// </summary>
         private int count;
 
+        /// <summary> 
+        /// intialize the class
+        /// </summary>
         void Start()
         {
             count = 0;
@@ -24,6 +30,9 @@ namespace UnityLibTest1
             Debug.Log("Unity version: " + Application.unityVersion);
         }
 
+        /// <summary>
+        /// Periodically print message statued
+        /// </summary>
         void Update()
         {
             if (count++ % 30 == 0)
